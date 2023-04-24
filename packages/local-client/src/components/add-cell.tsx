@@ -7,8 +7,8 @@ type AddCellProps = {
 const AddCell: React.FC<AddCellProps> = ({ prevCellId, forceVisable }) => {
   const { insertCellAfter } = useActions();
   return (
-    <div className={`add-cell ${forceVisable && `force-visible`}`}>
-      <div className="add-buttons">
+    <div className={`add-cell `}>
+      <div className={`add-buttons ${forceVisable && `force-visible`}`}>
         <button
           className="button is-rounded is-primary is-small"
           onClick={() => insertCellAfter(prevCellId, "code")}

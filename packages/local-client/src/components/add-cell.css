@@ -1,6 +1,7 @@
 .add-cell {
   position: relative;
-  opacity: 0;
+  display: flex;
+  justify-content: center;
   transition: opacity 0.3s ease-in-out 0.05s;
   margin: 10px 0;
 }
@@ -8,7 +9,7 @@
   opacity: 1;
 }
 .force-visible {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .add-cell .divider {
@@ -21,11 +22,16 @@
   width: 90%;
   z-index: -1;
 }
-.add-cell .add-buttons {
+.add-buttons {
   display: flex;
   justify-content: center;
+  transition: opacity 0.3s ease-in-out 0.05s;
+  opacity: 0;
 }
 
+.add-buttons:hover {
+  opacity: 1;
+}
 .add-cell .add-buttons button {
   margin: 0 20px;
 }

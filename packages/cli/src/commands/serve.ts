@@ -32,7 +32,7 @@ export const serveCommand = new Command()
         !isProduction
       );
       console.log(
-        `Opened ${filename}.Navigate to http://localhost:${options.port} to edit the file `
+        `Opened ${filename}. Navigate to http://localhost:${options.port} to edit the file `
       );
     } catch (err: any) {
       if (err.code === "EADDRINUSE") {
