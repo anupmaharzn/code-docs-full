@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@js-docs-anup/api": "^1.0.0",
-    "commander": "^10.0.1",
     "@types/node": "^18.15.13",
+    "commander": "^10.0.1",
     "esbuild": "0.8.27",
     "typescript": "^5.0.4"
   }
