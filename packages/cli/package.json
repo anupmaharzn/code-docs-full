@@ -1,0 +1,29 @@
+{
+  "name": "js-docs-anup",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "dist/index.js",
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@js-docs-anup/client": "^1.0.0"
+  },
+  "devDependencies": {
+    "@js-docs-anup/api": "^1.0.0",
+    "commander": "^10.0.1",
+    "@types/node": "^18.15.13",
+    "esbuild": "0.8.27",
+    "typescript": "^5.0.4"
+  }
+}
